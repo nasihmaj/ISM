@@ -1,6 +1,15 @@
-function performCalculation() {
-    var input1 = parseFloat(document.getElementById('input1').value);
-    var input2 = parseFloat(document.getElementById('input2').value);
-    var result = input1 + input2; // Modify this line based on your calculation needs
-    document.getElementById('result').innerText = 'Result: ' + result;
+function calculateTotalCost() {
+    var distance = parseFloat(document.getElementById('distance').value);
+    var fuelCost = parseFloat(document.getElementById('fuelCost').value);
+    var averageMPG = parseFloat(document.getElementById('averageMPG').value);
+    var cargoWeight = parseFloat(document.getElementById('cargoWeight').value);
+    var driverWage = parseFloat(document.getElementById('driverWage').value);
+    var travelHours = parseFloat(document.getElementById('travelHours').value);
+
+    var fuelNeeded = distance / averageMPG;
+    var totalFuelCost = fuelNeeded * fuelCost;
+    var totalDriverCost = driverWage * travelHours;
+
+    var totalCost = totalFuelCost + totalDriverCost;
+    document.getElementById('result').innerText = 'Total Cost: $' + totalCost.toFixed(2);
 }

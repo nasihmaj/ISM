@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+    <title>Trucking Cost Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Calculation Tool</h1>
-        <input type="number" id="input1" placeholder="Enter first value">
-        <input type="number" id="input2" placeholder="Enter second value">
-        <button onclick="performCalculation()">Calculate</button>
-        <div id="result">Result will appear here</div>
-    </div>
+<div class="container">
+    <h1>Trucking Cost Calculator</h1>
+    <input type="number" id="distance" placeholder="Distance (miles)">
+    <input type="number" id="fuelCost" placeholder="Fuel Cost per Gallon">
+    <input type="number" id="averageMPG" placeholder="Average MPG">
+    <input type="number" id="cargoWeight" placeholder="Cargo Weight (lbs)">
+    <input type="number" id="driverWage" placeholder="Driver Wage per Hour">
+    <input type="number" id="travelHours" placeholder="Travel Hours">
+    <button onclick="calculateTotalCost()">Calculate Cost</button>
+    <div id="result">Total Cost will appear here</div>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
