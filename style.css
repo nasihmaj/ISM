@@ -20,7 +20,7 @@ body {
     background: #ffffff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
-    width: 300px;
+    width: 350px; /* Adjusted width */
 }
 
 h1 {
@@ -30,13 +30,24 @@ h1 {
     margin-bottom: 20px;
 }
 
-input[type="number"] {
-    width: calc(100% - 16px);
-    padding: 8px;
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
+}
+
+label {
+    flex-basis: 50%; /* Gives label half the space */
+    margin-right: 10px; /* Space between label and input */
+    text-align: right; /* Aligns text to right, closer to input */
+}
+
+input[type="number"] {
+    flex-grow: 1; /* Takes remaining space */
+    padding: 8px;
     border: 2px solid #ccc;
     border-radius: 4px;
-    display: block;
 }
 
 button {
