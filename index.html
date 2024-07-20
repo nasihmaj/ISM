@@ -10,19 +10,14 @@
 <div class="container">
     <h1>Trucking Cost Calculator</h1>
     <div class="form-group">
-        <label for="distance">Distance (miles):</label>
-        <input type="number" id="distance" placeholder="Enter distance">
+        <label for="totalMiles">Distance (miles):</label>
+        <input type="number" id="totalMiles" placeholder="Enter distance">
     </div>
     <div class="form-group">
         <label for="payRate">Fuel Cost per Gallon:</label>
         <input type="number" id="payRate" placeholder="pay rate">
     </div>
 
-
-    <div class="form-group">
-        <label for="totalPayRate">Fuel Cost per Gallon:</label>
-        <input type="number" id="totalPayRate" placeholder="Enter fuel cost">
-    </div>
 
     <button onclick="calculateTotalCost()">Calculate Cost</button>
     <div id="result">Total Cost will appear here</div>
