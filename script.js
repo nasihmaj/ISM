@@ -22,7 +22,7 @@ function calculateTotalCost() {
 */
 
 
+    var totalFare = totalMiles * payRate;
+    document.getElementById('result').innerText = 'Total Cost: $' + totalFare.toFixed(2);
 
-    var totalCost = totalMiles * payRate;
-    document.getElementById('result').innerText = 'Total Cost: $' + totalCost.toFixed(2);
 }
